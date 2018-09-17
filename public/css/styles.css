@@ -14,6 +14,7 @@ table {
 }
 
 .context {
+    margin-top: 15px;
     text-align: center;
 }
 
@@ -44,6 +45,7 @@ table {
 
 #input_option {
     visibility: hidden;
+    width: 30px;
 }
 .object_text {
     text-align: left;
