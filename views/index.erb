@@ -1,35 +1,61 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-  </head>
-  <title>正規表現チェッカー</title>
-  <body>
+<head>
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+</head>
+<title>正規表現チェッカー</title>
+<body>
 
-   <form action="/send" method="post">
-     <div class="input_regix">
-       <p>正規表現を入れてください</p>
-     </div>
-     <div class="input_regix_field">
-       <input type="text" name="input_regix" placeholder="/正規表現/">
-     </div>
-     <div class="input_replased">
-       <p>置換したい文字を入れてください</p>
-     </div>
-     <div class="input_replased_field">
-       <input type="text" name="replased_name" placeholder="置換したい文字">
-     </div>
-     <div class="replase_button">
-       <input type="submit" value="置換します" style="margin-top: 15px; width: 100px; heigjt: 30px;">
-     </div>
-     <div class="replase_result">
-       <p>結果</p>
-       <% if @input_regix %>
-         <p class="result" style="border:#ff0000 solid 1px; width: 300px; height: 100px"><%= @input_regix %>という正規表現が入力されました。<p>
-       <% else %>
-         <p class="result" style="border:#ff0000 solid 1px; width: 300px; height: 100px"><p>
-       <% end %>
-     </div>
-   </form>
-  </body>
+<h1> 正規表現チェッカー </h1>
+<form action="/" method="post">
+  <div class="input_regix">
+    <p>正規表現を入れてください</p>
+  </div>
+  <div class="input_regix_field">
+    <input type="text" name="input_regix" placeholder="/正規表現/" value="<%= @input_regix %>">
+  </div>
+<!--  <div>-->
+<!--    <input type="checkbox" id="replased" value="replased">置換する-->
+<!--  </div>-->
+<!--  <div class="input_replased">-->
+<!--    <div>-->
+<!--      <p>置換したい文字を入れてください</p>-->
+<!--    </div>-->
+<!--    <div class="input_replased_field">-->
+<!--      <input type="text" name="replased_name" placeholder="置換したい文字">-->
+<!--    </div>-->
+<!--  </div>-->
+  <div class="object_text">
+    <p>文章を入力してください。</p>
+  </div>
+  <div class="text_field">
+    <textarea name="object_text" placeholder="hogehoge"></textarea>
+  </div>
+
+  <div class="replase_button">
+    <input type="submit" value="チェックする" style="margin-top: 15px; width: 100px; heigjt: 30px;">
+  </div>
+
+  <input type="hidden" name="read" value= true>
+</form>
+
+<% if @is_read %>
+  <div class="replase_result">
+    <p>検証結果</p>
+    <% if @result%>
+      <p><%= @result %>が一致しました</p>
+    <% else %>
+      <p>一致しませんでした</p>
+    <% end %>
+  </div>
+<% else %>
+<% end %>
+
+</body>
+
+<script>
+
+</script>
 </html>
