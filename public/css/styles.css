@@ -86,12 +86,12 @@ td:nth-child(2n+1) {
 textarea {
     background-color: lightgray;
     resize: none;
-    width: 300px;
+    width: 25%;
     height: 150px;
 }
 
 input[type="text"] {
     background-color: lightgray;
-    width: 225px;
+    width: 25%;
     height: 25px;
 }
