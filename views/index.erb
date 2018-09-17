@@ -4,6 +4,7 @@
   <meta charset='utf-8'>
   <link rel="stylesheet" href="css/styles.css">
   <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="/js/main.js"></script>
 </head>
 <title>正規表現チェッカー</title>
 <body>
@@ -54,7 +55,7 @@
     <% if @result %>
       <p class="result_message"><%= @result %>が一致しました</p>
     <% else %>
-      <p>一致しませんでした</p>
+      <p>no match</p>
     <% end %>
   </div>
 </div>
@@ -62,8 +63,4 @@
 <% end %>
 
 </body>
-
-<script>
-
-</script>
 </html>
