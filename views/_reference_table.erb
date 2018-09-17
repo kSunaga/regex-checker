@@ -1,0 +1,69 @@
+<div class="refelence">
+  <table border="1">
+    <tr>
+      <th colspan="2">文字クラス</th>
+      <th colspan="2">両指定子</th>
+      <th colspan="2">その他</th>
+    </tr>
+    <tr>
+      <td>[abc]</td>
+      <td>a,b,cいずれかの１文字</td>
+      <td>*</td>
+      <td>0回以上の繰り返し</td>
+      <td>.</td>
+      <td>改行以外の１文字</td>
+    </tr>
+    <tr>
+      <td>[^abc]</td>
+      <td>a,b,c以外の１文字</td>
+      <td>+</td>
+      <td>1回以上の繰り返し</td>
+      <td>^</td>
+      <td>行頭</td>
+    </tr>
+    <tr>
+      <td>[A-Z]</td>
+      <td>大文字アルファベット１文字</td>
+      <td>?</td>
+      <td>0回または１回の出現</td>
+      <td>$</td>
+      <td>行末</td>
+    </tr>
+    <tr>
+      <td>[0-9]</td>
+      <td>数字１文字</td>
+      <td>{n}</td>
+      <td>n回の繰り返し</td>
+      <td>|</td>
+      <td>いずれかの文字列</td>
+    </tr>
+    <tr>
+      <td>[a-zA-Z0-9]</td>
+      <td>アルファベットか数字１文字</td>
+      <td>{n,m}</td>
+      <td>n回以上、m回以下の繰り返し</td>
+      <td>()</td>
+      <td>グループ化</td>
+    </tr>
+    <tr>
+      <td>[!--]</td>
+      <td>半角文字１文字</td>
+      <td>{n,}</td>
+      <td>n回以上の繰り返し</td>
+      <td>\</td>
+      <td>直後のメタ文字をエスケープする</td>
+    </tr>
+    <tr>
+      <th colspan="6">オプション</th>
+    </tr>
+    <tr>
+      <td>i</td>
+      <td>大小文字の区別をつけない</td>
+      <td>m</td>
+      <td>マルチラインモード</td>
+      <td>u</td>
+      <td>マルチバイトモード</td>
+    </tr>
+  </table>
+  <a href="https://pleiades.io/help/ruby/regular-expression-syntax-reference.html">もっと詳しく見る</a>
+</div>
