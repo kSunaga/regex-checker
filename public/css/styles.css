@@ -1,8 +1,10 @@
 body {
-    background-color: lightgray;
+    background-color: whitesmoke;
 }
 
 h1 {
+    background-color: darkred;
+    margin: 0;
     text-align: center;
     border-bottom: 1px solid black;
 }
@@ -11,11 +13,20 @@ table {
     border-collapse: collapse;
 }
 
+
+.context {
+    text-align: center;
+}
 .refelence {
     float: right;
     display: inline-block;
+    padding-top: 50px;
     width: 60%;
-    height: 500px;
+    height: 300px;
+}
+
+.input_regix > p {
+    text-decoration: underline;
 }
 
 .input_something {
@@ -23,21 +34,24 @@ table {
     padding-left: 100px;
 }
 
-.input_regix {
-
-}
-
 .object_text {
     text-align: left;
     padding-top: 35px;
 }
 
+.object_text > p {
+    text-decoration: underline;
+}
+
 .replase_button {
-    padding-bottom: 30px
+    padding-bottom: 30px;
+    margin-top: 15px;
+    width: 100px;
+    heigjt: 50px;
 }
 
 .replase_result {
-    background-color: floralwhite;
+    background-color: lightgray;
     text-align: center;
     margin: 0 auto;
     width: 650px;
@@ -56,15 +70,28 @@ table {
     margin-left: 50%;
 }
 
+.refelence > p {
+    text-align: center;
+    font-size: 20px;
+}
+
+th {
+    background-color: darkred;
+}
+
+td:nth-child(2n+1) {
+    background-color: lightgray;
+}
+
 textarea {
-    background-color: floralwhite;
+    background-color: lightgray;
     resize: none;
     width: 300px;
     height: 150px;
 }
 
 input[type="text"] {
-    background-color: floralwhite;
+    background-color: lightgray;
     width: 225px;
     height: 25px;
 }
