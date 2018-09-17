@@ -3,15 +3,15 @@
     <div class="input_regix">
       <p>正規表現を入れてください</p>
       <div class="input_regix_field">
-        <input type="text" name="input_regix" placeholder="正規表現" value="<%= @input_regix %>">
-        <input type="text" name="input_option" style="width: 30px; display: none">
+        /<input type="text" name="input_regix" value="<%= @input_regix %>">/
+        <input type="text" name="input_option" id="input_option" style="width: 30px;">
       </div>
     </div>
     <div>
       <input type="checkbox" id="option" value="option">オプションを付ける
       <input type="checkbox" id="replased" value="replased">置換する
     </div>
-    <div class="input_replased" style="display: none">
+    <div class="input_replased">
       <div>
         <p>置換したい文字を入れてください</p>
       </div>

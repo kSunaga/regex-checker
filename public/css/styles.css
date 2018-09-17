@@ -38,6 +38,13 @@ table {
     float: left;
 }
 
+.input_replased {
+    display: none;
+}
+
+#input_option {
+    visibility: hidden;
+}
 .object_text {
     text-align: left;
     padding-top: 35px;
@@ -97,6 +104,7 @@ textarea {
 
 input[type="text"] {
     background-color: lightgray;
-    width: 15%;
+    width: 20%;
     height: 25px;
 }
+
