@@ -3,7 +3,7 @@
     <p>検証結果</p>
     <div class="replase_result">
       <% if !@result.to_s.empty? %>
-        <p class="result_message"><%= @result %>が一致しました</p>
+        <p class="result_message">Match: <%= @result %></p>
       <% else %>
         <p>no match</p>
       <% end %>
