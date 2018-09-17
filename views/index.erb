@@ -12,40 +12,42 @@
 <form action="/" method="post">
   <div class="input_regix">
     <p>正規表現を入れてください</p>
+    <div class="input_regix_field">
+      <input type="text" name="input_regix" placeholder="正規表現" value="<%= @input_regix %>">
+    </div>
   </div>
-  <div class="input_regix_field">
-    <input type="text" name="input_regix" placeholder="/正規表現/" value="<%= @input_regix %>">
-  </div>
-<!--  <div>-->
-<!--    <input type="checkbox" id="replased" value="replased">置換する-->
-<!--  </div>-->
-<!--  <div class="input_replased">-->
-<!--    <div>-->
-<!--      <p>置換したい文字を入れてください</p>-->
-<!--    </div>-->
-<!--    <div class="input_replased_field">-->
-<!--      <input type="text" name="replased_name" placeholder="置換したい文字">-->
-<!--    </div>-->
-<!--  </div>-->
+
+  <!--  <div>-->
+  <!--    <input type="checkbox" id="replased" value="replased">置換する-->
+  <!--  </div>-->
+  <!--  <div class="input_replased">-->
+  <!--    <div>-->
+  <!--      <p>置換したい文字を入れてください</p>-->
+  <!--    </div>-->
+  <!--    <div class="input_replased_field">-->
+  <!--      <input type="text" name="replased_name" placeholder="置換したい文字">-->
+  <!--    </div>-->
+  <!--  </div>-->
+
   <div class="object_text">
     <p>文章を入力してください。</p>
-  </div>
-  <div class="text_field">
-    <textarea name="object_text" placeholder="hogehoge"></textarea>
+    <div class="text_field">
+      <textarea name="object_text" placeholder="hogehoge"></textarea>
+    </div>
   </div>
 
   <div class="replase_button">
     <input type="submit" value="チェックする" style="margin-top: 15px; width: 100px; heigjt: 30px;">
   </div>
 
-  <input type="hidden" name="read" value= true>
+  <input type="hidden" name="read" value=true>
 </form>
 
 <% if @is_read %>
+  <p class="result">検証結果</p>
   <div class="replase_result">
-    <p>検証結果</p>
-    <% if @result%>
-      <p><%= @result %>が一致しました</p>
+    <% if @result %>
+      <p class="result_message"><%= @result %>が一致しました</p>
     <% else %>
       <p>一致しませんでした</p>
     <% end %>
