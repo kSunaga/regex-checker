@@ -49,16 +49,16 @@
 </form>
 
 <% if @is_read %>
-<div class="result_form">
-  <p>検証結果</p>
-  <div class="replase_result">
-    <% if @result %>
-      <p class="result_message"><%= @result %>が一致しました</p>
-    <% else %>
-      <p>no match</p>
-    <% end %>
+  <div class="result_form">
+    <p>検証結果</p>
+    <div class="replase_result">
+      <% if @result %>
+        <p class="result_message"><%= @result %>が一致しました</p>
+      <% else %>
+        <p>no match</p>
+      <% end %>
+    </div>
   </div>
-</div>
 <% else %>
 <% end %>
 
