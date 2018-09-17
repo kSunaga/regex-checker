@@ -12,57 +12,10 @@
 <h1>Ruby 正規表現チェッカー </h1>
 <p class="context">これはRubyの正規表現チェッカーです。開発、テスト用にご自由にお使いください。</p>
 <%= erb :'_reference_table' %>
-<form action="/" method="post">
-  <div class="input_something">
-    <div class="input_regix">
-      <p>正規表現を入れてください</p>
-      <div class="input_regix_field">
-        <input type="text" name="input_regix" placeholder="正規表現" value="<%= @input_regix %>">
-      </div>
-    </div>
-
-      <div>
-        <input type="checkbox" id="replased" value="replased">置換する
-      </div>
-      <div class="input_replased" style="display: none">
-        <div>
-          <p style>置換したい文字を入れてください</p>
-        </div>
-        <div class="input_replased_field">
-          <input type="text" name="replased_name" placeholder="置換したい文字">
-        </div>
-      </div>
-
-    <div class="object_text">
-      <p>文章を入力してください。</p>
-      <div class="text_field">
-        <textarea name="object_text" placeholder="hogehoge"></textarea>
-      </div>
-    </div>
-    <div class="replase_button">
-      <input type="submit" value="チェックする">
-    </div>
-  </div>
-
-  <input type="hidden" name="read" value=true>
-</form>
-
-<% if @is_read %>
-  <div class="result_form">
-    <p>検証結果</p>
-    <div class="replase_result">
-      <% if !@result.to_s.empty? %>
-        <p class="result_message"><%= @result %>が一致しました</p>
-      <% else %>
-        <p>no match</p>
-      <% end %>
-    </div>
-  </div>
-<% else %>
-<% end %>
+<%= erb :'_form' %>
+<%= erb :'_result_area' %>
 
 <!--サンプル-->
-
 
 </body>
 </html>

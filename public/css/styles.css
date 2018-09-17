@@ -13,10 +13,10 @@ table {
     border-collapse: collapse;
 }
 
-
 .context {
     text-align: center;
 }
+
 .refelence {
     float: right;
     display: inline-block;
@@ -81,6 +81,7 @@ th {
 
 td:nth-child(2n+1) {
     background-color: lightgray;
+    text-align: center;
 }
 
 textarea {
