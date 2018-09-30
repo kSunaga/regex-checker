@@ -39,12 +39,16 @@ table {
     float: left;
 }
 
+#option_checkbox {
+    display: none;
+}
+
 .input_replased {
     display: none;
 }
 
 #input_option {
-    visibility: hidden;
+    display: none;
     width: 30px;
 }
 .object_text {
